@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.adr.jcasas.PODA.FichaRegistro">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MOSTRAR"
+        android:id="@+id/btnMostrar"
+        android:layout_alignTop="@+id/btnGrabar"
+        android:layout_alignRight="@+id/cboSupervisor"
+        android:layout_alignEnd="@+id/cboSupervisor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CARGADORES"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/lblRegistrador"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:textSize="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCargadores"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:inputType="number"
+        android:textSize="20dp"
+        android:layout_toLeftOf="@+id/lblLote"
+        android:layout_toStartOf="@+id/lblLote" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="PITONES"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/txtYema"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:textSize="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtYema"
+        android:inputType="number"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/txtCargadores"
+        android:layout_alignEnd="@+id/txtCargadores" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="YEMA"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/txtCargadores"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:textSize="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPitones"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:inputType="number"
+        android:textSize="20dp"
+        android:layout_toLeftOf="@+id/chck_Ubicacion"
+        android:layout_toStartOf="@+id/chck_Ubicacion" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="FECHA"
+        android:id="@+id/lblFecha"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="REGISTRADOR"
+        android:id="@+id/lblRegistrador"
+        android:textSize="12dp"
+        android:layout_alignTop="@+id/lblLote"
+        android:layout_alignRight="@+id/cboSupervisor"
+        android:layout_alignEnd="@+id/cboSupervisor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="LOTE"
+        android:id="@+id/lblLote"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="SUPERVISOR"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/txtPitones"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="12dp"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cboSupervisor"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="DEFICIENCIAS"
+        android:id="@+id/textView5"
+        android:textSize="14dp"
+        android:layout_above="@+id/chck_Limpieza"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ubicacion Material"
+        android:id="@+id/chck_Ubicacion"
+        android:checked="false"
+        android:layout_below="@+id/cboSupervisor"
+        android:layout_alignLeft="@+id/lblLote"
+        android:layout_alignStart="@+id/lblLote"
+        android:layout_marginTop="10dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Falta Rebajar"
+        android:id="@+id/chck_Falta"
+        android:checked="false"
+        android:layout_below="@+id/chck_Ubicacion"
+        android:layout_alignLeft="@+id/chck_Ubicacion"
+        android:layout_alignStart="@+id/chck_Ubicacion" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Limpieza"
+        android:id="@+id/chck_Limpieza"
+        android:checked="false"
+        android:layout_below="@+id/chck_Falta"
+        android:layout_alignLeft="@+id/chck_Falta"
+        android:layout_alignStart="@+id/chck_Falta" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGrabar"
+        android:text="GRABAR "
+        android:layout_below="@+id/chck_Limpieza"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/lblResultado"
+        android:layout_below="@+id/btnGrabar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="FUERA DE RANGO"
+        android:id="@+id/textView14"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_alignRight="@+id/lblRegistrador"
+        android:layout_alignEnd="@+id/lblRegistrador" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chck_fCargadores"
+        android:checked="false"
+        android:layout_below="@+id/textView14"
+        android:layout_alignLeft="@+id/btnMostrar"
+        android:layout_alignStart="@+id/btnMostrar" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chck_fYemas"
+        android:layout_alignTop="@+id/txtYema"
+        android:layout_alignRight="@+id/chck_fCargadores"
+        android:layout_alignEnd="@+id/chck_fCargadores"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chck_fPitones"
+        android:checked="false"
+        android:layout_alignTop="@+id/txtPitones"
+        android:layout_alignLeft="@+id/chck_fYemas"
+        android:layout_alignStart="@+id/chck_fYemas" />
+
+</RelativeLayout>

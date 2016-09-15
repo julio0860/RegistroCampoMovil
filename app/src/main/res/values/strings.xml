@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RegistroCampo</string>
+    <string name="lote">Lote</string>
+
+    <!-- Conjunto de Strings para el View GameSpinner -->
+    <string-array name="Zonas">
+        <item>ZONA ALTA</item>
+        <item>ZONA BAJA</item>
+
+    </string-array>
+</resources>
