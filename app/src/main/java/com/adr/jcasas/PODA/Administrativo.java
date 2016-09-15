@@ -24,6 +24,8 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Calendar;
 
+
+//HOLA MUNDO
 public class Administrativo extends AppCompatActivity {
     private static final String TAG ="Administrativo" ;
     private EditText txtDia,txtMes,txtAño;
